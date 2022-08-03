@@ -17,5 +17,8 @@ urlpatterns = [
     path('new_topic/',views.new_topic,name='new_topic'),
     # Сторінка для додавання нових статтей
     path("new_entry/<int:topic_id>/",views.new_entry,name='new_entry'),
+    # Сторінка для редагування дописів
+    path('edit_entry/<int:entry_id>/',views.edit_entry,name='edit_entry'),
+
 
 ]
